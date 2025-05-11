@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="img-src 'self' data:">
+  <title>Moje práce a recenzie</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo-container">
+        <a href="index.html">
+          <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid meet">
+            <g transform="translate(0.000000,100.000000) scale(0.100000,-0.100000)" fill="none" stroke="#6e7d5a"
+              stroke-width="6" stroke-linecap="round">
+              <path
+                d="M267 887 c-48 -15 -102 -59 -124 -100 -14 -25 -17 -54 -17 -127 1 -83 7 -110 43 -217 22 -67 41 -131 41 -141 0 -41 42 -154 68 -182 40 -44 82 -49 121 -13 25 22 38 48 60 123 17 62 32 95 41 95 9 0 24 -33 41 -95 22 -75 35 -101 60 -123 39 -36 81 -31 121 13 26 28 68 141 68 182 0 10 18 72 39 136 70 209 64 334 -20 405 -68 59 -162 70 -270 32 -34 -12 -45 -12 -81 1 -60 21 -146 26 -191 11z m174 -52 c24 -8 61 -31 82 -50 21 -20 43 -33 48 -30 15 10 10 34 -11 55 -26 26 -13 33 79 37 59 3 84 0 111 -14 93 -48 104 -142 41 -343 -22 -69 -47 -156 -55 -193 -20 -87 -48 -129 -85 -125 -31 4 -50 38 -81 145 -25 89 -54 116 -95 89 -18 -12 -30 -36 -45 -89 -31 -107 -50 -141 -81 -145 -36 4 -65 37 -85 125 -9 37 -34 124 -55 193 -63 200 -51 296 41 342 43 22 131 23 191 3z">
+                <animate attributeName="stroke-dasharray" from="0,1000" to="1000,0" dur="3s" fill="freeze" />
+              </path>
+            </g>
+          </svg>
+        </a>
+      </div>
+      <h1><a href="about.html" style="text-decoration: none; color: inherit;">MDDr. Mariia Mikhailova</a></h1>
+      <p>Moje práce a recenzie</p>
+    </header>
+
+    <section class="section">
+      <h2 style="display: none;">Moje práce a recenzie</h2>
+
+      <!-- Minimalist Single Image Gallery -->
+      <div class="single-gallery">
+        <button class="gallery-arrow gallery-arrow-left" aria-label="Predchádzajúca fotografia">&lt;</button>
+        <img id="single-gallery-img" class="single-gallery-img" src="img/MyCollages.jpg" alt="Work example 1">
+        <button class="gallery-arrow gallery-arrow-right" aria-label="Ďalšia fotografia">&gt;</button>
+      </div>
+      <div class="single-gallery-indicator" id="single-gallery-indicator"></div>
+
+      <!-- Recenzie block -->
+      <section class="section" style="margin-top: 32px;">
+        <h2 style="font-size:1.3em; color:#6e7d5a; margin-bottom:18px;">Recenzie pacientov</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 18px; justify-content: center;">
+          <!-- Review 1 -->
+          <div
+            style="background: #d6efcc; border-radius: 24px; padding: 18px 28px 28px 22px; min-width: 270px; max-width: 370px; position: relative; box-shadow: 0 2px 8px rgba(110,125,90,0.07); margin-bottom: 8px;">
+            <div style="font-size:1.1em; font-weight:600; color:#4a5a3f; margin-bottom: 6px;">
+              <span style="color:#ffc107; font-size:1.1em;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span style="margin-left:8px;">Jana K.</span>
+            </div>
+            <div style="color:#4a5a3f; font-style:italic; font-size:1em; margin-bottom: 0;">
+              Určite odporúčam. Pani doktorka bola veľmi milá, ústretová, všetko vysvetlila pred ošetrením.
+            </div>
+            <div
+              style="position:absolute; left:32px; bottom:-18px; width:0; height:0; border-left:18px solid transparent; border-right:18px solid transparent; border-top:18px solid #d6efcc;">
+            </div>
+          </div>
+          <!-- Review 2 -->
+          <div
+            style="background: #d6efcc; border-radius: 24px; padding: 18px 28px 28px 22px; min-width: 270px; max-width: 370px; position: relative; box-shadow: 0 2px 8px rgba(110,125,90,0.07); margin-bottom: 8px;">
+            <div style="font-size:1.1em; font-weight:600; color:#4a5a3f; margin-bottom: 6px;">
+              <span style="color:#ffc107; font-size:1.1em;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span style="margin-left:8px;">Peter M.</span>
+            </div>
+            <div style="color:#4a5a3f; font-style:italic; font-size:1em; margin-bottom: 0;">
+              Bol som na ošetrení s dcérou ktorá sa veľmi bála, ale zvládla to na 100% lebo prístup pani zubárky bol
+              skvelý. Veľmi milá osoba, ktorá všetko vysvetlila nielen mne ale aj dcére.
+            </div>
+            <div
+              style="position:absolute; left:60px; bottom:-18px; width:0; height:0; border-left:18px solid transparent; border-right:18px solid transparent; border-top:18px solid #d6efcc;">
+            </div>
+          </div>
+          <!-- Review 3 -->
+          <div
+            style="background: #d6efcc; border-radius: 24px; padding: 18px 28px 28px 22px; min-width: 270px; max-width: 370px; position: relative; box-shadow: 0 2px 8px rgba(110,125,90,0.07); margin-bottom: 8px;">
+            <div style="font-size:1.1em; font-weight:600; color:#4a5a3f; margin-bottom: 6px;">
+              <span style="color:#ffc107; font-size:1.1em;">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+              <span style="margin-left:8px;">Eva P.</span>
+            </div>
+            <div style="color:#4a5a3f; font-style:italic; font-size:1em; margin-bottom: 0;">
+              Veľké Ďakujem by som chcel vyjadriť pani doktorke. Vďaka jej odbornosti, šikovnosti a milému ľudskému
+              prístupu sa môžem opäť usmievať a veselo komunikovať.
+            </div>
+            <div
+              style="position:absolute; left:38px; bottom:-18px; width:0; height:0; border-left:18px solid transparent; border-right:18px solid transparent; border-top:18px solid #d6efcc;">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <p><a class="contact-link" href="contact.html">Objednať sa tu</a>.</p>
+    </section>
+
+    <!-- Connecting the shared footer -->
+    <div id="footer-placeholder"></div>
+    <script>
+      fetch('footer.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('footer-placeholder').innerHTML = data;
+        });
+    </script>
+  </div>
+  <script src="js/main.js"></script>
+  <script src="js/single-gallery.js"></script>
+</body>
+
+</html>
