@@ -25,7 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
   let swipeHandled = false;
 
   function preloadNearbyImages(index) {
-    // Предзагрузка следующего и предыдущего изображения
     [index - 1, index + 1].forEach((i) => {
       if (i >= 0 && i < galleryImages.length) {
         const img = new window.Image();
@@ -34,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  // Preload the first image
   function updateGallery() {
     imgEl.style.transition = "opacity 0.4s ease";
     imgEl.style.opacity = "0";
@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
       leftBtn.disabled = currentIndex === 0;
       rightBtn.disabled = currentIndex === galleryImages.length - 1;
 
-      // Ленивая предзагрузка ближайших изображений
+      // Preload the next and previous images
       preloadNearbyImages(currentIndex);
 
       const fadeIn = () => {
