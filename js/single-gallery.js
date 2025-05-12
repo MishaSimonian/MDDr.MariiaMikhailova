@@ -24,6 +24,16 @@ document.addEventListener("DOMContentLoaded", () => {
   let dragging = false;
   let swipeHandled = false;
 
+  function preloadNearbyImages(index) {
+    // Предзагрузка следующего и предыдущего изображения
+    [index - 1, index + 1].forEach((i) => {
+      if (i >= 0 && i < galleryImages.length) {
+        const img = new window.Image();
+        img.src = galleryImages[i];
+      }
+    });
+  }
+
   function updateGallery() {
     imgEl.style.transition = "opacity 0.4s ease";
     imgEl.style.opacity = "0";
@@ -33,6 +43,9 @@ document.addEventListener("DOMContentLoaded", () => {
       indicator.textContent = `${currentIndex + 1} / ${galleryImages.length}`;
       leftBtn.disabled = currentIndex === 0;
       rightBtn.disabled = currentIndex === galleryImages.length - 1;
+
+      // Ленивая предзагрузка ближайших изображений
+      preloadNearbyImages(currentIndex);
 
       const fadeIn = () => {
         imgEl.style.opacity = "1";
